@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldSimulation.Models", "WorldSimulation.Models\WorldSimulation.Models.csproj", "{CFD373A0-B1B2-4EEA-981D-5CD93DA23D40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldSimulation.BusinessLogic", "WorldSimulation.BusinessLogic\WorldSimulation.BusinessLogic.csproj", "{96B8E148-1D2B-4F84-BCDF-E1A765E25D62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldSimulation.Wpf", "WorldSimulation.Wpf\WorldSimulation.Wpf.csproj", "{F7C3DD94-1B27-4629-BA79-B859AD34142C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFD373A0-B1B2-4EEA-981D-5CD93DA23D40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFD373A0-B1B2-4EEA-981D-5CD93DA23D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFD373A0-B1B2-4EEA-981D-5CD93DA23D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFD373A0-B1B2-4EEA-981D-5CD93DA23D40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96B8E148-1D2B-4F84-BCDF-E1A765E25D62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96B8E148-1D2B-4F84-BCDF-E1A765E25D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96B8E148-1D2B-4F84-BCDF-E1A765E25D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96B8E148-1D2B-4F84-BCDF-E1A765E25D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7C3DD94-1B27-4629-BA79-B859AD34142C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7C3DD94-1B27-4629-BA79-B859AD34142C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7C3DD94-1B27-4629-BA79-B859AD34142C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7C3DD94-1B27-4629-BA79-B859AD34142C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
