@@ -1,27 +1,36 @@
-﻿namespace WorldSimulation.BusinessLogic.DataManagers;
+﻿using WorldSimulation.BusinessLogic.Saver;
 
-public class GeneralManager
+namespace WorldSimulation.BusinessLogic.DataManagers;
+
+public class GeneralManager : SaveDataController
 {
-    private readonly BuildsManager _buildsManager = new();
-    private readonly CitiesManager _citiesManager = new();
-    private readonly ContinentsManager _continentsManager = new();
-    private readonly CountriesManager _countriesManager = new();
-    private readonly EntitiesManager _entitiesManager = new();
-    private readonly PlanetsManager _planetsManager = new();
-    private readonly SpeciesManager _speciesManager = new();
-    private readonly VehiclesManager _vehiclesManager = new();
+    #region Properties
 
+    public BuildsManager BuildsManager { get; } = new();
+
+    public CitiesManager CitiesManager { get; } = new();
+
+    public ContinentsManager ContinentsManager { get; } = new();
+
+    public CountriesManager CountriesManager { get; } = new();
+
+    public EntitiesManager EntitiesManager { get; } = new();
+
+    public PlanetsManager PlanetsManager { get; } = new();
+
+    public SpeciesManager SpeciesManager { get; } = new();
+
+    public VehiclesManager VehiclesManager { get; } = new();
+
+    #endregion Properties
+    
     public GeneralManager()
     {
         
     }
 
-    public BuildsManager GetBuildsManager() => _buildsManager;
-    public CitiesManager GetCitiesManager() => _citiesManager;
-    public ContinentsManager GetContinentsManager() => _continentsManager;
-    public CountriesManager GetCountriesManager() => _countriesManager;
-    public EntitiesManager GetEntitiesManager() => _entitiesManager;
-    public PlanetsManager GetPlanetsManager() => _planetsManager;
-    public SpeciesManager GetSpeciesManager() => _speciesManager;
-    public VehiclesManager GetVehiclesManager() => _vehiclesManager;
+    public void SaveData()
+    {
+        
+    }
 }

@@ -1,38 +1,38 @@
-﻿using WorldSimulation.Models.Data;
+﻿using WorldSimulation.BusinessLogic.DataManagers.Interfaces;
+using WorldSimulation.Models.Data;
 
 namespace WorldSimulation.BusinessLogic.DataManagers;
 
-public class PlanetsManager
+public class PlanetsManager : IDataManager<Planet>
 {
-    private readonly ICollection<Planet> _planets;
+    private readonly ICollection<Planet> _items = new List<Planet>();
 
-    public PlanetsManager()
-    {
-        _planets = new List<Planet>();
-    }
-    
     public Planet? GetById(int id)
     {
-        return _planets.FirstOrDefault(planet => planet.Id == id);
+        return _items.FirstOrDefault(planet => planet.Id == id);
     }
 
     public Planet? GetByName(string name)
     {
-        return _planets.FirstOrDefault(planet => planet.Name == name);
+        return _items.FirstOrDefault(planet => planet.Name == name);
     }
 
     public ICollection<Planet> GetAll()
     {
-        return _planets;
+        return _items;
     }
 
     public void Add(Planet planet)
     {
-        _planets.Add(planet);
+        if (planet.Id == 0)
+        {
+            planet.Id = _items.Count + 1;
+        }
+        _items.Add(planet);
     }
 
     public void Remove(Planet planet)
     {
-        _planets.Remove(planet);
+        _items.Remove(planet);
     }
 }

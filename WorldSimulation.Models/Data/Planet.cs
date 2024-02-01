@@ -5,5 +5,5 @@ public class Planet
     public int Id { get; set; }
     public string Name { get; set; }
 
-    public ICollection<Continent> Continents { get; set; }
+    public ICollection<Continent> Continents { get; set; } = new List<Continent>();
 }
